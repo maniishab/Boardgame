@@ -1,53 +1,82 @@
-# BoardgameListingWebApp
+# 🎲 Boardgame Application
 
-## Description 
+A simple web application that displays a list of popular board games.  
+This project was built to practice and demonstrate a complete DevOps workflow — from development to deployment.
 
-**Board Game Database Full-Stack Web Application.**
-This web application displays lists of board games and their reviews. While anyone can view the board game lists and reviews, they are required to log in to add/ edit the board games and their reviews. The 'users' have the authority to add board games to the list and add reviews, and the 'managers' have the authority to edit/ delete the reviews on top of the authorities of users.  
+---
 
-## Technologies
+##  Overview
 
-- Java
-- Spring Boot
-- Amazon Web Services(AWS) EC2
-- Thymeleaf
-- Thymeleaf Fragments
-- HTML5
-- CSS
-- JavaScript
-- Spring MVC
-- JDBC
-- H2 Database Engine (In-memory)
-- JUnit test framework
-- Spring Security
-- Twitter Bootstrap
+The goal of this project was to understand how an application moves through different stages in DevOps.
+
+It includes:
+- Building a backend application
+- Containerizing it using Docker
+- Automating the process with Jenkins
+- Managing deployment using YAML configuration files
+
+---
+
+##  Tech Stack
+
+- Java / Spring Boot
 - Maven
+- Docker
+- Jenkins
+- Git & GitHub
+- YAML (Deployment & Service configuration)
 
-## Features
+---
+## 📂 Project Structure
+.
+├── src/ # Application source code
+├── Dockerfile # Docker configuration
+├── Jenkinsfile # CI/CD pipeline
+├── deployment.yml # Deployment setup
+├── service.yml # Service configuration
+├── pom.xml # Project dependencies
+└── README.md
 
-- Full-Stack Application
-- UI components created with Thymeleaf and styled with Twitter Bootstrap
-- Authentication and authorization using Spring Security
-  - Authentication by allowing the users to authenticate with a username and password
-  - Authorization by granting different permissions based on the roles (non-members, users, and managers)
-- Different roles (non-members, users, and managers) with varying levels of permissions
-  - Non-members only can see the boardgame lists and reviews
-  - Users can add board games and write reviews
-  - Managers can edit and delete the reviews
-- Deployed the application on AWS EC2
-- JUnit test framework for unit testing
-- Spring MVC best practices to segregate views, controllers, and database packages
-- JDBC for database connectivity and interaction
-- CRUD (Create, Read, Update, Delete) operations for managing data in the database
-- Schema.sql file to customize the schema and input initial data
-- Thymeleaf Fragments to reduce redundancy of repeating HTML elements (head, footer, navigation)
 
-## How to Run
+---
 
-1. Clone the repository
-2. Open the project in your IDE of choice
-3. Run the application
-4. To use initial user data, use the following credentials.
-  - username: bugs    |     password: bunny (user role)
-  - username: daffy   |     password: duck  (manager role)
-5. You can also sign-up as a new user and customize your role to play with the application! 😊
+##  Docker Setup
+
+### Build the image
+```bash
+docker build -t boardgame-app .
+
+
+---
+
+## ⚙️ CI/CD Pipeline
+
+Jenkins is used to automate:
+- Build using Maven
+- Docker image creation
+- Application deployment
+
+Pipeline is defined in the `Jenkinsfile`.
+
+---
+
+## 📸 Screenshots
+
+### 🌐 Application Running
+![Application Running](screenshots/Application%20Running.png)
+
+### 🐳 Docker Execution
+![Docker Execution](screenshots/Docker%20Execution.png)
+
+### ⚙️ Jenkins Pipeline
+![Jenkins Pipeline](screenshots/Jenkins%20Pipeline.png)
+---
+
+## 📌 What I Learned
+
+- Docker containerization
+- Jenkins CI/CD basics
+- YAML configuration
+- End-to-end DevOps workflow
+
+---
