@@ -63,13 +63,13 @@ Pipeline is defined in the `Jenkinsfile`.
 ## 📸 Screenshots
 
 ### 🌐 Application Running
-![Application Running](screenshots/Application%20Running.png)
+![Application Running](screenshots/Application Running.png)
 
 ### 🐳 Docker Execution
-![Docker Execution](screenshots/Docker%20Execution.png)
+![Docker Execution](screenshots/Docker Execution.png)
 
 ### ⚙️ Jenkins Pipeline
-![Jenkins Pipeline](screenshots/Jenkins%20Pipeline.png)
+![Jenkins Pipeline](screenshots/Jenkins Pipeline.png)
 ---
 
 ## 📌 What I Learned
