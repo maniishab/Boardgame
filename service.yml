@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+ name: boardgame-service
+spec:
+ type: LoadBalancer
+ selector:
+  web: boardgame
+ ports:
+  - targetPort: 8080
+    port: 80
