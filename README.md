@@ -28,13 +28,34 @@ In this project, I focused on how an application moves through different stages 
 
 ---
 
+## 📂 Project Structure
+
+```
+.
+├── src/
+├── k8s/
+│   ├── deployment.yaml
+│   └── service.yaml
+├── screenshots/
+├── Dockerfile
+├── Jenkinsfile
+├── pom.xml
+└── README.md
+```
+
+---
+
 ##  Docker Setup
 
-  docker build -t boardgame-app .
-  
 ### Build the image
+```
+docker build -t boardgame-app .
+```
 
+### Run the container
+```
 docker run -p 8080:8080 boardgame-app
+```
 
 ---
 
@@ -50,13 +71,17 @@ The pipeline is defined in the `Jenkinsfile`.
 
 ---
 
-📸 Screenshots
-Application Running
-<img src="./screenshots/ApplicationRunning.png" width="700"/>
-Docker Execution
-<img src="./screenshots/DockerExecution.png" width="700"/>
-Jenkins Pipeline
-<img src="./screenshots/JenkinsPipeline.png" width="700"/>
+##  Screenshots
+
+### 🌐 Application Running
+![App](screenshots/ApplicationRunning.png)
+
+### 🐳 Docker Execution
+![Docker](screenshots/DockerExecution.png)
+
+### ⚙️ Jenkins Pipeline
+![Jenkins](screenshots/JenkinsPipeline.png)
+
 ---
 
 ##  What I Learned
@@ -67,5 +92,3 @@ Jenkins Pipeline
 - Understanding complete DevOps workflow  
 
 ---
-
-## 📂 Project Structure
