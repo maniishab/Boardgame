@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ - name: boardgame-deploy
+   labels:
+    web: boardgame
+spec:
+ replicas: 2
+ selector:
+ matchLabels:
+  web: boardgame
+ template:
+  metadata:
+   labels:
+    web: boardgame
+  spec:
+   containers:
+    - name: boardgame
+      image: devopsproject2.azurecr.io/boardgamme:latest
+      ports:
+       - containerPort: 8080
