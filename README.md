@@ -1,82 +1,80 @@
-# 🎲 Boardgame Application
+**🎲 Boardgame Application**
 
-A simple web application that displays a list of popular board games.  
-This project was built to practice and demonstrate a complete DevOps workflow — from development to deployment.
+This is a simple web application that shows a list of popular board games.
+I built this project to understand how a real DevOps workflow works from start to end.
 
----
+** Overview**
 
-##  Overview
+In this project, I focused on how an application moves through different stages like build, containerization, and deployment.
 
-The goal of this project was to understand how an application moves through different stages in DevOps.
+What I did in this project:
 
-It includes:
-- Building a backend application
-- Containerizing it using Docker
-- Automating the process with Jenkins
-- Managing deployment using YAML configuration files
+Built a backend application using Spring Boot
 
----
+Created a Docker image for the application
 
-##  Tech Stack
+Set up a Jenkins pipeline for automation
 
-- Java / Spring Boot
-- Maven
-- Docker
-- Jenkins
-- Git & GitHub
-- YAML (Deployment & Service configuration)
+Used Kubernetes YAML files for deployment
 
----
-## 📂 Project Structure
+** Tech Stack **
+
+Java / Spring Boot
+
+Maven
+
+Docker
+
+Jenkins
+
+Git & GitHub
+
+Kubernetes (YAML)
+
+**📂 Project Structure**
 .
 ├── src/
 ├── k8s/
 │   ├── deployment.yaml
 │   └── service.yaml
+├── screenshots/
 ├── Dockerfile
 ├── Jenkinsfile
 ├── pom.xml
 └── README.md
+** Docker Setup**
 
----
-
-##  Docker Setup
-
-### Build the image
-```bash
+Build the image:
 docker build -t boardgame-app .
 
+Run the container:
+docker run -p 8080:8080 boardgame-app
 
----
+** CI/CD Pipeline**
 
-## ⚙️ CI/CD Pipeline
+I used Jenkins to automate the process:
 
-Jenkins is used to automate:
-- Build using Maven
-- Docker image creation
-- Application deployment
+Build the project using Maven
 
-Pipeline is defined in the `Jenkinsfile`.
+Create a Docker image
 
----
+Deploy the application
 
-## 📸 Screenshots
+The pipeline is written inside the Jenkinsfile.
 
-### 🌐 Application Running
-![Application Running](screenshots/ApplicationRunning.png)
+** Screenshots**
+Application Running
+<img src="./screenshots/ApplicationRunning.png" width="700"/>
+Docker Execution
+<img src="./screenshots/DockerExecution.png" width="700"/>
+Jenkins Pipeline
+<img src="./screenshots/JenkinsPipeline.png" width="700"/>
+📌 What I Learned
 
-### 🐳 Docker Execution
-![Docker Execution](screenshots/DockerExecution.png)
+How Docker works in real projects
 
-### ⚙️ Jenkins Pipeline
-![Jenkins Pipeline](screenshots/JenkinsPipeline.png)
----
+Basics of Jenkins CI/CD
 
-## 📌 What I Learned
+Writing Kubernetes YAML files
 
-- Docker containerization
-- Jenkins CI/CD basics
-- YAML configuration
-- End-to-end DevOps workflow
-
----
+Understanding complete DevOps flow
