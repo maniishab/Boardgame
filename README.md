@@ -50,17 +50,13 @@ The pipeline is defined in the `Jenkinsfile`.
 
 ---
 
-## 📸 Screenshots
-
-### 🌐 Application Running
-![App](screenshots/app.png)
-
-### 🐳 Docker Execution
-![Docker](screenshots/docker.png)
-
-### ⚙️ Jenkins Pipeline
-![Jenkins](screenshots/jenkins.png)
-
+📸 Screenshots
+Application Running
+<img src="./screenshots/ApplicationRunning.png" width="700"/>
+Docker Execution
+<img src="./screenshots/DockerExecution.png" width="700"/>
+Jenkins Pipeline
+<img src="./screenshots/JenkinsPipeline.png" width="700"/>
 ---
 
 ##  What I Learned
