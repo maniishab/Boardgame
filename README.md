@@ -29,14 +29,14 @@ It includes:
 ---
 ## 📂 Project Structure
 .
-├── src/ # Application source code
-├── Dockerfile # Docker configuration
-├── Jenkinsfile # CI/CD pipeline
-├── deployment.yml # Deployment setup
-├── service.yml # Service configuration
-├── pom.xml # Project dependencies
+├── src/
+├── k8s/
+│   ├── deployment.yaml
+│   └── service.yaml
+├── Dockerfile
+├── Jenkinsfile
+├── pom.xml
 └── README.md
-
 
 ---
 
@@ -63,13 +63,13 @@ Pipeline is defined in the `Jenkinsfile`.
 ## 📸 Screenshots
 
 ### 🌐 Application Running
-![Application Running](screenshots/Application%20Running.png)
+![Application Running](screenshots/ApplicationRunning.png)
 
 ### 🐳 Docker Execution
-![Docker Execution](screenshots/Docker%20Execution.png)
+![Docker Execution](screenshots/DockerExecution.png)
 
 ### ⚙️ Jenkins Pipeline
-![Jenkins Pipeline](screenshots/Jenkins%20Pipeline.png)
+![Jenkins Pipeline](screenshots/JenkinsPipeline.png)
 ---
 
 ## 📌 What I Learned
