@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         ACR_LOGIN_SERVER = "devopsproject2.azurecr.io"
-        IMAGE_NAME = "boardgame"
+        IMAGE_NAME = "boardgameapp"
         TAG = "latest"
     }
 

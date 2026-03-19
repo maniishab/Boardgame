@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: boardgame
-          image: devopsproject2.azurecr.io/boardgame:latest
+          image: devopsproject2.azurecr.io/boardgameapp:latest
           ports:
             - containerPort: 8080
