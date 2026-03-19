@@ -1,82 +1,94 @@
 # 🎲 Boardgame Application
 
-A simple web application that displays a list of popular board games.  
-This project was built to practice and demonstrate a complete DevOps workflow — from development to deployment.
+This is a simple web application that shows a list of popular board games.  
+I built this project to understand how a real DevOps workflow works from start to end.
 
 ---
 
 ##  Overview
 
-The goal of this project was to understand how an application moves through different stages in DevOps.
+In this project, I focused on how an application moves through different stages like build, containerization, and deployment.
 
-It includes:
-- Building a backend application
-- Containerizing it using Docker
-- Automating the process with Jenkins
-- Managing deployment using YAML configuration files
+### What I did in this project:
+- Built a backend application using Spring Boot  
+- Created a Docker image for the application  
+- Set up a Jenkins pipeline for automation  
+- Used Kubernetes YAML files for deployment  
 
 ---
 
 ##  Tech Stack
 
-- Java / Spring Boot
-- Maven
-- Docker
-- Jenkins
-- Git & GitHub
-- YAML (Deployment & Service configuration)
+- Java / Spring Boot  
+- Maven  
+- Docker  
+- Jenkins  
+- Git & GitHub  
+- Kubernetes (YAML)  
 
 ---
-## 📂 Project Structure
-.
-├── src/ # Application source code
-├── Dockerfile # Docker configuration
-├── Jenkinsfile # CI/CD pipeline
-├── deployment.yml # Deployment setup
-├── service.yml # Service configuration
-├── pom.xml # Project dependencies
-└── README.md
 
+## 📂 Project Structure
+
+```
+.
+├── src/
+├── k8s/
+│   ├── deployment.yaml
+│   └── service.yaml
+├── screenshots/
+├── Dockerfile
+├── Jenkinsfile
+├── pom.xml
+└── README.md
+```
 
 ---
 
 ##  Docker Setup
 
 ### Build the image
-```bash
+```
 docker build -t boardgame-app .
+```
 
-
----
-
-## ⚙️ CI/CD Pipeline
-
-Jenkins is used to automate:
-- Build using Maven
-- Docker image creation
-- Application deployment
-
-Pipeline is defined in the `Jenkinsfile`.
+### Run the container
+```
+docker run -p 8080:8080 boardgame-app
+```
 
 ---
 
-## 📸 Screenshots
+##  CI/CD Pipeline
+
+I used Jenkins to automate the process:
+
+- Build the project using Maven  
+- Create a Docker image  
+- Deploy the application  
+
+The pipeline is defined in the `Jenkinsfile`.
+
+---
+
+##  Screenshots
 
 ### 🌐 Application Running
-![Application Running](screenshots/Application%20Running.png)
+![App](screenshots/ApplicationRunning.png)
 
 ### 🐳 Docker Execution
-![Docker Execution](screenshots/Docker%20Execution.png)
+![Docker](screenshots/DockerExecution.png)
 
 ### ⚙️ Jenkins Pipeline
-![Jenkins Pipeline](screenshots/Jenkins%20Pipeline.png)
+![Jenkins](screenshots/JenkinsPipeline.png)
+
 ---
 
-## 📌 What I Learned
+##  What I Learned
 
-- Docker containerization
-- Jenkins CI/CD basics
-- YAML configuration
-- End-to-end DevOps workflow
+- How Docker works in real projects  
+- Basics of Jenkins CI/CD  
+- Writing Kubernetes YAML files  
+- Understanding complete DevOps workflow  
 
 ---
